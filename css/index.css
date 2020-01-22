@@ -181,11 +181,81 @@ body {
   padding: 4% 0;
   border-bottom: 1px solid black;
 }
-.button-container {
+.first-section .button-container {
   border: 2px solid orange;
 }
-.button-container button {
+.first-section .button-container button {
   height: 5vh;
   width: 25%;
   margin-left: 2%;
+}
+.cta {
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 3%;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.cta .div1 {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+.cta .div1 h2 {
+  padding: 2% 0;
+}
+.cta .div2 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+}
+.cta h2 {
+  width: 100%;
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+}
+.cta ul {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+ul li {
+  padding: 0 3%;
+}
+.table {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.table h2 {
+  font-size: 2rem;
+}
+.table table {
+  width: 100%;
+}
+.table table th {
+  height: 50%;
+  text-align: left;
+}
+.table table tr {
+  width: 25%;
+}
+.table table td {
+  height: 50px;
+  vertical-align: middle;
+}
+.table table .gray {
+  background: lightgray;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: darkgray;
+  width: 90%;
+  margin: 0 auto;
 }
