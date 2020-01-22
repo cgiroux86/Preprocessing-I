@@ -1,1 +1,191 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  font-family: 'Bangers', cursive;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Bangers', cursive;
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  width: 100%;
+  border: 2px solid yellow;
+  justify-content: flex-end;
+}
+.header nav {
+  border: 2px solid green;
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  font-family: 'Ubuntu', sans-serif;
+}
+.first-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 2%;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid purple;
+  background: lightgray;
+}
+.first-section img {
+  width: 35%;
+  height: 40vh;
+}
+.first-section .name-container h1 {
+  border: 1px solid green;
+  display: flex;
+  padding: 4% 0;
+  width: 50%;
+  justify-content: flex-start;
+  font-family: 'Bangers', cursive;
+  font-size: 2.5rem;
+  margin-left: 2%;
+}
+.first-section p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  padding: 4% 0;
+  border-bottom: 1px solid black;
+}
+.button-container {
+  border: 2px solid orange;
+}
+.button-container button {
+  height: 5vh;
+  width: 25%;
+  margin-left: 2%;
+}
