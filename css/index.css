@@ -142,11 +142,9 @@ body {
 .header {
   display: flex;
   width: 100%;
-  border: 2px solid yellow;
   justify-content: flex-end;
 }
 .header nav {
-  border: 2px solid green;
   display: flex;
   width: 40%;
   justify-content: space-evenly;
@@ -164,7 +162,6 @@ body {
   padding: 2% 2%;
   width: 90%;
   margin: 0 auto;
-  border: 2px solid purple;
   background: lightgray;
 }
 @media (max-width: 500px) {
@@ -184,13 +181,11 @@ body {
 }
 @media (max-width: 500px) {
   .first-section .name-container {
-    border: 2px solid lime;
     display: flex;
     justify-content: center;
   }
 }
 .first-section .name-container h1 {
-  border: 1px solid green;
   display: flex;
   padding: 4% 0;
   width: 50%;
@@ -215,9 +210,6 @@ body {
     text-align: center;
     padding: 3% 0;
   }
-}
-.button-container {
-  border: 2px solid orange;
 }
 @media (max-width: 500px) {
   .button-container {
@@ -245,10 +237,8 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   padding: 3% 0;
-  border: 1px solid lime;
 }
 .div1 {
-  border: 1px solid magenta;
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -272,7 +262,6 @@ body {
   display: flex;
   width: 50%;
   flex-direction: column;
-  border: 1px solid green;
 }
 @media (max-width: 500px) {
   .div2 {
@@ -331,7 +320,6 @@ ul li {
 @media (max-width: 500px) {
   .table table th {
     text-align: center;
-    border: 1px solid magenta;
   }
 }
 .table table tr {
