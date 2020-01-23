@@ -152,6 +152,12 @@ body {
   justify-content: space-evenly;
   font-family: 'Ubuntu', sans-serif;
 }
+@media (max-width: 500px) {
+  .header nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 .first-section {
   display: flex;
   flex-direction: column;
@@ -161,9 +167,27 @@ body {
   border: 2px solid purple;
   background: lightgray;
 }
+@media (max-width: 500px) {
+  .first-section {
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .first-section img {
   width: 35%;
   height: 40vh;
+}
+@media (max-width: 500px) {
+  .first-section img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .first-section .name-container {
+    border: 2px solid lime;
+    display: flex;
+    justify-content: center;
+  }
 }
 .first-section .name-container h1 {
   border: 1px solid green;
@@ -175,63 +199,126 @@ body {
   font-size: 2.5rem;
   margin-left: 2%;
 }
+@media (max-width: 500px) {
+  .first-section .name-container h1 {
+    vertical-align: c;
+  }
+}
 .first-section p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   padding: 4% 0;
   border-bottom: 1px solid black;
 }
-.first-section .button-container {
+@media (max-width: 500px) {
+  .first-section p {
+    text-align: center;
+    padding: 3% 0;
+  }
+}
+.button-container {
   border: 2px solid orange;
 }
-.first-section .button-container button {
+@media (max-width: 500px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.button-container button {
   height: 5vh;
   width: 25%;
   margin-left: 2%;
 }
+@media (max-width: 500px) {
+  .button-container button {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .cta {
-  font-size: 1.2rem;
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 3%;
   display: flex;
   width: 90%;
   margin: 0 auto;
   justify-content: space-between;
+  padding: 3% 0;
+  border: 1px solid lime;
 }
-.cta .div1 {
-  display: flex;
-  width: 40%;
-  flex-direction: column;
-}
-.cta .div1 h2 {
-  padding: 2% 0;
-}
-.cta .div2 {
+.div1 {
+  border: 1px solid magenta;
   display: flex;
   width: 50%;
-  align-items: center;
   flex-direction: column;
 }
-.cta h2 {
-  width: 100%;
+.div1 h2 {
   font-family: 'Bangers', cursive;
-  font-size: 1.3rem;
+  font-size: 2rem;
+  padding-bottom: 2%;
 }
-.cta ul {
+.div1 p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .div1 p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+.div2 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  border: 1px solid green;
+}
+@media (max-width: 500px) {
+  .div2 {
+    align-content: center;
+  }
+}
+.div2 h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .div2 h2 {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10%;
+  }
+}
+.div2 ul {
+  display: flex;
   border-bottom: 1px solid black;
-  width: 100%;
+  width: 60%;
+  flex-direction: column;
+  align-content: flex-start;
+}
+@media (max-width: 500px) {
+  .div2 ul {
+    width: 100%;
+    line-height: 2rem;
+  }
 }
 ul li {
-  padding: 0 3%;
+  padding: 2% 3%;
+  font-size: 1.3rem;
+  border: 0.5px solid black;
 }
 .table {
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10%;
 }
 .table h2 {
   font-size: 2rem;
+  padding-bottom: 2%;
 }
 .table table {
   width: 100%;
@@ -239,13 +326,27 @@ ul li {
 .table table th {
   height: 50%;
   text-align: left;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .table table th {
+    text-align: center;
+    border: 1px solid magenta;
+  }
 }
 .table table tr {
   width: 25%;
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  .table table tr {
+    font-size: 1rem;
+  }
 }
 .table table td {
   height: 50px;
   vertical-align: middle;
+  font-family: 'Ubuntu', sans-serif;
 }
 .table table .gray {
   background: lightgray;
